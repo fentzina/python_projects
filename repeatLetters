@@ -1,0 +1,8 @@
+# repeat each letter of a string N times
+def str_repeat(str, N):
+  new_str = ""
+  for i in str:
+    new_str += i*N
+  return new_str
+
+str_repeat("fenia", 5)
