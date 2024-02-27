@@ -1,0 +1,23 @@
+def is_isogram(str):
+    #your code here
+    str = str.lower()
+    print(str)
+
+    unique_letters = set()
+    print(unique_letters)
+
+    # Iterate through each letter in the lowercase word
+    for letter in str:
+        print(letter)
+        # Check if the letter is already in the set (non-unique)
+        if letter in unique_letters:
+            return False
+        else:
+            # Add the letter to the set if it's not already present
+            unique_letters.add(letter)
+
+    # If the loop completes without returning False, the word is an isogram
+    return True
+
+str = "Moon"
+is_isogram(str)
